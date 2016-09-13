@@ -77,10 +77,20 @@ WSGI_APPLICATION = 'FirstProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        #Add 'postgresql_psycopyg2','mysql','sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.sqlite3',
+        #Postgres DB setup
+        #Add 'v','mysql','sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopyg2',
 
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'Djangodb',
+
+        'USER':'postgres',
+
+        'PASSWORD':'Madhusudan1!',
+
+        'HOST':'',
+
+        'PORT':'',
     }
 }
 
