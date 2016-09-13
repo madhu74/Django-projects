@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         #Postgres DB setup
         #Add 'v','mysql','sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.postgresql_psycopyg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': 'Djangodb',
