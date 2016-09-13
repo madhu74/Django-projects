@@ -18,6 +18,7 @@ from django.contrib import admin
 from . import views
 urlpatterns = [
     #url(r'^$',views.mindex,name='mindex'),
+    url(r'^music', include('music.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^music',include('music.urls')),
+
 ]
