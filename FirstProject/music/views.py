@@ -24,7 +24,7 @@ def index(request):
 def detail(request,album_id):
     try:
         album = Album.objects.get(pk=album_id)
-    except Album.ObjectDoesNotExist:
+    except Album.DoesNotExist:
         raise Http404("Album does not exist")
 
     return render(request,'music/detail.html',{'album' : album, })
